@@ -1,0 +1,36 @@
+{
+  "name": "One-to-One-Video-Chat-Sample-Web-Application",
+  "version": "1.0.1",
+  "description": "Sample Application to enable developers to understand how to build applications using EnableX Video API.",
+  "keywords": [
+    "node",
+    "EnableX",
+    "One-on-One"
+  ],
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./server/server.js"
+  },
+  "devDependencies": {
+    "eslint": "^7.7.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "btoa": "^1.2.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fcm-node": "^1.6.1",
+    "firebase": "^9.19.1",
+    "firebase-admin": "^11.6.0",
+    "log4js": "^6.3.0",
+    "mongoose": "^7.0.3",
+    "nodemon": "^2.0.22",
+    "socket.io": "^4.6.1"
+  }
+}
