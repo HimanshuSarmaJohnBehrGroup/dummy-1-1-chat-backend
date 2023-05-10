@@ -1,6 +1,4 @@
-const mongoose = require('mongoose');
 const RoomSchema = require('../models/rooms').RoomSchema;
-const { sendNotification } = require('../fcm')
 
 const createRoom = async (req, res, next, cb) => {
     try {

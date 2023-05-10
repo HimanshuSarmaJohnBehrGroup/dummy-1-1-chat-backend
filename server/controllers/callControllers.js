@@ -12,7 +12,7 @@ const notifyRecipient = async (req, res, next) => {
         name: recipient_name
     });
     
-    sendNotification(userDocument.fcm_token, 'Test title', 'Test body', res);
+    sendNotification(userDocument.fcm_token, 'Initiator name', res);
 }
 
 

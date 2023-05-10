@@ -8,7 +8,7 @@ const { getUserDataByName } = require('./controllers/userControllers');
 
 const fcm = new FCM(process.env.FCM_SERVER_KEY);
 
-const sendNotification = async (username, title, body, cb) => {
+const sendNotification = async (username, initiator, cb) => {
 
     // mongoose.connect(process.env.MONGO_DB_CONNECTION_URI)
     // .then(res => {
@@ -26,8 +26,8 @@ const sendNotification = async (username, title, body, cb) => {
                     // collapse_key: 'your_collapse_key',
                     
                     notification: {
-                        title: title, 
-                        body: body 
+                        title: `Incoming call`, 
+                        body: `${initiator} is calling you` 
                     },
                     
                     // data: {  //you can send only notification or only data(or include both)

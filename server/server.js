@@ -252,7 +252,7 @@ io.on("connection", (socket) => {
                               callType: parsedData.callType
                             });
 
-                            sendNotification(parsedData.receiver, `Notification title`, `Notification body`, (err, response) => {
+                            sendNotification(parsedData.receiver, parsedData?.name, (err, response) => {
 
                             });
                           }
